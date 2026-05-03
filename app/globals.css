@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { min-height: 100vh; }
+.tile-card { transition: transform .25s ease, box-shadow .25s ease; }
+.tile-card:hover { transform: translateY(-6px); }
+.marquee { animation: marquee 20s linear infinite; }
+@keyframes marquee { from { transform: translateX(100%); } to { transform: translateX(-100%); } }
